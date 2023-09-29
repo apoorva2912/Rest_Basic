@@ -11,8 +11,7 @@ export class PrismaService extends PrismaClient {
             {
                 datasources: {
                     db: {
-                        url: config.get('DATABASE_URL'),
-                        //url: 'postgresql://postgres:123@localhost:5434/nest?schema=public'
+                        url: 'postgresql://postgres:123@localhost:5434/nest?schema=public'
                     },
                 },
             },
